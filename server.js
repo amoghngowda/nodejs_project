@@ -7,7 +7,7 @@ const bodyParser = require('body-parser'); // Correct spelling: bodyParser
 
 app.use(bodyParser.json()); // Use bodyParser.json() to parse JSON request bodies
 
-
+//fuckd ffdd
 
 
 app.use('/user',router);
