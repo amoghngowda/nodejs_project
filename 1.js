@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://127.0.0.1:27017/newdata';
-
+// const url = 'mongodb://127.0.0.1:27017/newdata';
+require('dotenv').config();
+// const url = "mongodb+srv://amogh865:helloworld@cluster0.lmb9y.mongodb.net/";
+const url = process.env.URL;
 mongoose.connect(url, {  // Add connection options (see below)
     useNewUrlParser: true,
     useUnifiedTopology: true,
